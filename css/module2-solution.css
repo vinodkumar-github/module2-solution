@@ -1,0 +1,124 @@
+/* Mother container in the parent block in which I added three sections. But i didnt simple add sections*/
+/* certain rendering scope was achieved when I sepearted each section into a */
+/* Main - for responsive design,*/
+/* CONTENT - a subset element of responsive design so that styling wont interfere with responsiveness */
+/* section - for a object in which I kept the section title element */
+/* text - defined in CONTENT with h2 tags */ 
+
+
+.heading {
+    /* This is styling for Page heading*/
+    text-align: center;
+    font-family: Copperplate, Papyrus, fantasy;
+    color: #000000;
+    font-weight: bold;
+    font-size: 2.625em; 
+    text-transform: uppercase;
+   
+        }
+
+
+.container {
+
+    width: 100%;
+    margin: 10px;
+
+        }
+        
+
+.main {
+
+
+    float: left;    
+    box-sizing: border-box;
+
+
+        }
+
+        
+.section {
+    
+    
+            /* box-sizing: border-box; */
+        
+        
+    float: inline-end;
+    position: relative;
+    margin: 0px 0px 0px 6%; 
+    padding: 2% 3% 2% 9%; 
+    font-family: Copperplate, Papyrus, fantasy;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.875em; 
+    text-transform: uppercase;
+    text-align: right;  
+    border: 1px solid black;        
+      }
+        
+
+.content {
+    
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    background-color: #FBDF95;
+            
+        }
+
+
+
+        
+.secfish {
+    background-color: #D59898;
+}
+
+.secbeef {
+    background-color: #C14543;
+}
+
+.seclamb {
+    background-color: #E5D198;
+}
+    
+
+.textstyle {
+    font-family: fantasy, Helvetica, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: initial;
+    text-align: justify;  
+    margin: 0px;
+    border: 1px solid black;  
+    padding: 3%; 
+}
+
+@media (min-width: 992px) {
+    .desktop {
+        float: left;
+        width: 33%;
+        height: 320px;
+        }
+    }
+          
+@media (min-width: 768px) and (max-width: 991px) {
+    .tablet  {
+        float: left;
+        width: 50%;
+             
+        }
+          
+    .tablet2 {
+        float: left;
+        width: 100%;
+          
+        }
+}
+
+@media (max-width: 767px) { /* This style rule is unneccesary as any case other than desktop and tablet restores width to 100% */
+    .mobile {
+        float: left;
+        width: 100%;
+    
+    }
+     }
